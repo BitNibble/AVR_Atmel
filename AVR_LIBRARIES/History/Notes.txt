@@ -1,0 +1,49 @@
+/**************************** Comment: ******************************
+1º Sequence
+2º Scope
+3º Pointers and Variables, address and data.
+********************************************************************/
+/**********************/
+A micro controller is nothing more then circuits being controlled by registers, instead of before where 
+these circuits where made fixed, now this hardware just has the options enabled for change. timers, 
+adc s, spi, uart, multiplexers, shift registers, adders, i2c, ios, etc. A simple layer of hardware 
+was just dropped on top to control the options available of these circuits. Therefore thinking code 
+with the mindset of how the hardware works, the logic circuits, etc, just makes it more reliable. Maybe for
+starters should first be introduced to the logic circuits, TTL and CMOS, all those chips 74HC series and the 
+4000, then the timer and multiplexers, shifters and math operator flip-flops, latches, tri-state drivers chips, etc, 
+knowing how they operate is a plus when coding and browsing the data sheet schematics.
+To know what a mcu can do is just put all the control registers in series and count all the bits (n), then do 2^n 
+and you have the possible cases. It is then limited.
+
+note: not defining interrupt function, or initializing an object will block the program.
+
+/**********************/
+having the image with procedures has implications of very high dependency, but on
+the other hand turns tasks easier.
+
+Having only the hardware image helps imense when shared by all other libraries, less
+dependente and centralized, may be better, it has more separation. Do not know whitch 
+is better, maybe will bet in more division, and use only the image, and make all other 
+libraries dependente on it, not including subroutines on the image.
+
+It only means a bigger header in the main file nothing less.
+
+/**********************/
+First layer is hardware matching, second layer is harware matching with library module 
+spawning new intances of selected module, resumed have intance representing the microcontroller
+that then can create intances of indidual circuits of the microcontroller, having the option 
+to just work with the modules independently.
+/******/
+Tera Term:
+
+sending AT commands to bluetooth modules.
+Setup->Terminal:
+New-Line -> Transmit -> CR+LF
+Radio Button "Local Echo" <- Selected
+Setup -> Serial port -> speed: xxxxxx -> Data: 8bit -> Parity: none -> Stop bits: 1 -> Flow control: none
+
+default speed for AT commands 38400Kbits/sec
+
+To send data must copy text to clipboard then paste to terminal window (black bacground windows), 
+a pop up menu with text will appear, then select ok to send text.
+/******/

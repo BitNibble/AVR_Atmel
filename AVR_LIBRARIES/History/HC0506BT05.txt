@@ -1,0 +1,23 @@
+/***Program***/
+Tera term
+/***Setup and process to transmit AT commands***/
+Serial com 5
+/***MENU***/
+setup terminal -> transmit -> CR+LF
+click box -> Local echo
+OK
+/******/
+Setup -> Serial -> 	com5
+			115200
+			8 bit
+			none
+			1 bit
+			none
+New setting
+/******/
+Edit -> Paste CR -> <<Insert AT Command>> -> OK
+/******/
+done, using tera term.
+
+Using Serial Bluetooth Terminal 1.40
+
